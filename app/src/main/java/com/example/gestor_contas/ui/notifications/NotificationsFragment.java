@@ -1,5 +1,6 @@
 package com.example.gestor_contas.ui.notifications;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.gestor_contas.MainActivity;
 import com.example.gestor_contas.R;
 import com.example.gestor_contas.model.UserAuth;
 import com.example.gestor_contas.ui.notifications.adapters.NotificationsRecyclerAdapterAno;
@@ -40,7 +42,6 @@ public class NotificationsFragment extends Fragment {
                     arrayList_Anos.add(dataSnapshot.getKey());
                 }
                 recyclerView_ano = view.findViewById(R.id.fragment_notifications_recyclerView_ano);
-
                 NotificationsRecyclerAdapterAno notificationsRecyclerAdapterAno = new NotificationsRecyclerAdapterAno(getActivity(), arrayList_Anos);
                 recyclerView_ano.setAdapter(notificationsRecyclerAdapterAno);
                 recyclerView_ano.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -51,8 +52,6 @@ public class NotificationsFragment extends Fragment {
 
             }
         });
-
-
         return view;
     }
 }
