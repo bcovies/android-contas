@@ -17,7 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.gestor_contas.LoginActivity;
 import com.example.gestor_contas.R;
-import com.example.gestor_contas.UserAuth;
+import com.example.gestor_contas.model.UserAuth;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 

@@ -1,4 +1,4 @@
-package com.example.gestor_contas;
+package com.example.gestor_contas.model;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

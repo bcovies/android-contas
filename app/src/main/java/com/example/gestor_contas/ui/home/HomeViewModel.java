@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.gestor_contas.UserAuth;
+import com.example.gestor_contas.model.UserAuth;
 
 public class HomeViewModel extends ViewModel {
 
