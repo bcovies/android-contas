@@ -33,11 +33,16 @@ public class NotificationsFinalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications_final);
 
+        textView = findViewById(R.id.activity_notifications_final_textView);
+
+
         SharedPreferences sharedPreferences = getSharedPreferences("PREF-TAG-ANO", MODE_PRIVATE);
         String ano = sharedPreferences.getString("PREF-STRING-ANO", "");
 
+        SharedPreferences.Editor editor = getSharedPreferences("PREF-TAG-MES", MODE_PRIVATE).edit();
         String mes = (String) getIntent().getSerializableExtra("TAG-MES");
-        textView = findViewById(R.id.activity_notifications_final_textView);
+        editor.putString("PREF-STRING-MES",mes);
+        editor.commit();
 
         databaseReference_final = userAuth.returnReference().child("/users/" + userAuth.getCurrentUserUID()+ "/notas/" + ano + "/" + mes );
         databaseReference_final.addValueEventListener(new ValueEventListener() {

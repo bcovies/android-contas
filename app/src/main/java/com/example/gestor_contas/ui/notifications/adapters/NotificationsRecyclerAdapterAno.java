@@ -26,12 +26,6 @@ public class NotificationsRecyclerAdapterAno extends RecyclerView.Adapter<Notifi
         this.arrayList_anos = arrayList_anos;
     }
 
-    private void irParaMainActivity() {
-
-//        notificationsActivityMes_Intent.putExtra("",ano);
-
-    }
-
     class MyViewHolder extends RecyclerView.ViewHolder {
         private Button button_ano;
 
@@ -55,7 +49,6 @@ public class NotificationsRecyclerAdapterAno extends RecyclerView.Adapter<Notifi
         holder.button_ano.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                irParaMainActivity();
                 notificationsActivityMes_Intent = new Intent(context, NotificationsActivityMes.class);
                 notificationsActivityMes_Intent.putExtra("TAG-ANO", ano);
                 context.startActivity(notificationsActivityMes_Intent);
