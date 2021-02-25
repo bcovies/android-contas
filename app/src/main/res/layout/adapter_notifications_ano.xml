@@ -8,5 +8,8 @@
         android:id="@+id/adapter_notifications_mes_button_mes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:textSize="24sp"
         android:text="Button" />
 </LinearLayout>

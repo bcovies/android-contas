@@ -54,7 +54,7 @@ public class NotificationsFinalActivity extends AppCompatActivity {
                     total = total + valor;
                 }
                 String totalD = String.valueOf(total);
-                textView.setText(totalD);
+                textView.setText("TOTAL: "+totalD);
                 inicializarRecyclerView();
 
             }
