@@ -8,11 +8,16 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/dialog_dashboard_editText"
+        android:id="@+id/dialog_edit_editText_nome"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName" />
-
+    <EditText
+        android:id="@+id/dialog_edit_editText_valor"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
 
 </LinearLayout>
