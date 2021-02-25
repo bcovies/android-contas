@@ -33,7 +33,10 @@ public class NotificationsActivityMes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications_mes);
 
+        SharedPreferences.Editor editor = getSharedPreferences("PREF-TAG-ANO", MODE_PRIVATE).edit();
         String ano = (String) getIntent().getSerializableExtra("TAG-ANO");
+        editor.putString("PREF-STRING-ANO",ano);
+        editor.commit();
         databaseReference_mes = userAuth.returnReference().child("/users/" + userAuth.getCurrentUserUID()+ "/notas/" + ano);
         databaseReference_mes.addValueEventListener(new ValueEventListener() {
             @Override
