@@ -4,16 +4,17 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/adapter_notifications_final_textView"
+        android:id="@+id/adapter_notifications_final_textView_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="TextView" />
 
-    <Button
-        android:id="@+id/adapter_notifications_final_button"
+    <TextView
+        android:id="@+id/adapter_notifications_final_textView_valor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Button" />
+        android:text="TextView" />
+
 </LinearLayout>

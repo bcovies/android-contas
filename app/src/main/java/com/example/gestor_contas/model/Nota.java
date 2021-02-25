@@ -2,11 +2,15 @@ package com.example.gestor_contas.model;
 
 public class Nota {
     private String nome;
-    private Float valor;
+    private float valor;
 
     public Nota(String nome, Float valor) {
         this.nome = nome;
         this.valor = valor;
+    }
+
+    public Nota() {
+
     }
 
     public String getNome() {
